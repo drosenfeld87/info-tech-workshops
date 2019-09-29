@@ -6,17 +6,27 @@ body {
 }
 
 h1 {
-    font-size: 33pt;
-    font-weight: 500;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
 }
 
 .hero-image {
-    background-image: url("/home/debbie/Desktop/projects/info-tech/img/iStock-1002018094.png");
+    background-image: url("/home/debbie/Desktop/projects/info-tech/img/hero.jpg");
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+  }
+
+  .lg-title {
+    font-size: 4rem;
+    color: #2576b7;
+    font-weight: 700;
   }
   
   .hero-text {
@@ -25,4 +35,24 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: #fff;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .better-workshops {
+    text-align: center;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .better-workshops-desc {
+    padding-top: 2em;
   }
