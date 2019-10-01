@@ -58,9 +58,10 @@ h2 {
   }
 
 
-  .box-desc {
+  .description {
     color: #4a4a4a;
     text-align: left;
+    padding: 20px;
   }
 
   .wrkshp-type-wrapper {
@@ -79,8 +80,24 @@ h2 {
     margin: 0 auto;
   }
 
-  /* @media screen and (max-width: 500px) and (min-width: 0px) {
+  .client-feedback {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-column-gap: 10px;
+  }
+
+
+  @media screen and (max-width: 500px)  {
     .better-wrkshps-wrapper {
       grid-template-columns: 1fr 2fr;
     }
-  } */
+
+    .client-feedback {
+      flex-direction: column;
+    }
+  }
