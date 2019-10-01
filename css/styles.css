@@ -11,7 +11,8 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 600;
+    color: #2576b7;
 }
 
 .hero-image {
@@ -41,16 +42,19 @@ h2 {
   .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
   }
 
   .section {
     text-align: center;
   }
 
-  .wrapper {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, 100px 300px);
+  .better-wrkshps-wrapper {
+    display: grid; 
+    grid-template-columns: 1fr 2fr 1fr 2fr; 
+    grid-template-rows: repeat(2, 1fr); 
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
   }
 
 
@@ -59,10 +63,24 @@ h2 {
     text-align: left;
   }
 
-
-  @media only screen and (max-width: 500px) {
-    .wrapper {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
+  .wrkshp-type-wrapper {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; 
   }
+
+  #parallelogram {
+    max-width: 75%;
+    height: 150px;
+    transform: skew(20deg);
+    background: #f8c435;
+    margin: 0 auto;
+  }
+
+  /* @media screen and (max-width: 500px) and (min-width: 0px) {
+    .better-wrkshps-wrapper {
+      grid-template-columns: 1fr 2fr;
+    }
+  } */
