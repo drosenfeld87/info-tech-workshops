@@ -1,11 +1,16 @@
 body {
     color: #4a4a4a;
-    font-size: 16pt;
+    font-size: 14pt;
+    line-height: 1.5;
     font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
     font-size: 2rem;
+}
+
+.highlight {
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #f8c435 20%);
 }
 
 h2 {
@@ -46,19 +51,18 @@ h2 {
 
   .section {
     text-align: center;
+    padding: 20px;
   }
 
   .better-wrkshps-wrapper {
     display: grid; 
-    grid-template-columns: 1fr 2fr 1fr 2fr; 
+    grid-template-columns: 1fr 3fr 1fr 3fr; 
     grid-template-rows: repeat(2, 1fr); 
-    grid-column-gap: 10px;
+    grid-column-gap: 2px;
     grid-row-gap: 10px;
   }
 
-
   .description {
-    color: #4a4a4a;
     text-align: left;
     padding: 20px;
   }
@@ -67,8 +71,7 @@ h2 {
     display: grid; 
     grid-template-columns: repeat(2, 1fr); 
     grid-template-rows: repeat(2, 1fr); 
-    grid-column-gap: 20px;
-    grid-row-gap: 20px; 
+    grid-column-gap: 10px;
   }
 
   #parallelogram {
@@ -96,16 +99,31 @@ h2 {
       grid-template-columns: 1fr 2fr;
     }
 
+    .description {
+      padding: 5px;
+    }
+
+    .lg-title {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .h1 {
+      font-size: 1.5rem;
+    }
+
     .client-feedback {
       flex-direction: column;
     }
 
     .wrkshp-type-wrapper {
       grid-template-columns: 1fr;
+      grid-column-gap: 5px;
+      grid-row-gap: 5px;
       text-align: center;
     }
 
     .contact {
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr;
     }
   }
