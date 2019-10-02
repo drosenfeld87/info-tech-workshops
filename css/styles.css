@@ -5,22 +5,35 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.header {
+  font-size: 4rem;
+  color: #f8c435;
+}
+
+.header-highlight {
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #2576b7 20%);
+  padding-bottom: .5rem;
+}
+
 h1 {
     font-size: 2rem;
 }
 
 .highlight {
   background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #f8c435 20%);
+  padding-bottom: .5rem;
 }
 
 h2 {
     font-size: 1.5rem;
     font-weight: 600;
     color: #2576b7;
+    margin-bottom: 1px;
 }
 
 .hero-image {
     background-image: url("/home/debbie/Desktop/projects/info-tech-workshops/img/hero.jpg");
+    background-color: rgba(255, 255, 255, 0.5);
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,10 +41,11 @@ h2 {
     position: relative;
   }
 
-  .lg-title {
+  .numbers {
     font-size: 4rem;
     color: #2576b7;
     font-weight: 700;
+    margin-bottom: 5px;
   }
   
   .hero-text {
@@ -74,17 +88,13 @@ h2 {
     grid-column-gap: 10px;
   }
 
-  #parallelogram {
-    max-width: 75%;
-    height: 150px;
-    transform: skew(20deg);
-    background: #f8c435;
-    margin: 0 auto;
-  }
-
   .client-feedback {
     display: flex;
     flex-direction: row;
+  }
+
+  .stats {
+    margin: auto;
   }
 
   .contact {
@@ -93,22 +103,30 @@ h2 {
     grid-column-gap: 10px;
   }
 
+  #vertical {
+    width:100px;
+    height:1px;
+    background-color: #4a4a4a;
+    transform: rotate(90deg);
+  }
+
 
   @media screen and (max-width: 500px) {
     .better-wrkshps-wrapper {
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr;
     }
 
     .description {
-      padding: 5px;
+      padding: 1px;
+      text-align: center
     }
 
-    .lg-title {
+    .header {
       font-size: 3rem;
       font-weight: 700;
     }
 
-    .h1 {
+    .subheader {
       font-size: 1.5rem;
     }
 
