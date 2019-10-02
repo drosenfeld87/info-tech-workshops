@@ -5,6 +5,50 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2576b7;
+    margin-bottom: 1px;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: #2576b7;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #2576b7;
+  text-decoration:none;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -2px;
+  left: 0;
+  background-color: #f8c435;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
 .header {
   font-size: 4rem;
   color: #f8c435;
@@ -15,20 +59,9 @@ body {
   padding-bottom: .5rem;
 }
 
-h1 {
-    font-size: 2rem;
-}
-
 .highlight {
   background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #f8c435 20%);
   padding-bottom: .5rem;
-}
-
-h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #2576b7;
-    margin-bottom: 1px;
 }
 
 .hero-image {
@@ -103,13 +136,20 @@ h2 {
     grid-column-gap: 10px;
   }
 
-  #vertical {
-    width:100px;
-    height:1px;
-    background-color: #4a4a4a;
-    transform: rotate(90deg);
+  .phone {
+    text-align: center;
   }
 
+  @media screen and (max-width: 768px) {
+    .numbers {
+      font-size: 3em;
+    }
+
+    .contact {
+      grid-template-columns: 1fr 1fr;
+    }
+
+  }
 
   @media screen and (max-width: 500px) {
     .better-wrkshps-wrapper {
@@ -122,7 +162,7 @@ h2 {
     }
 
     .header {
-      font-size: 3rem;
+      font-size: 2.75rem;
       font-weight: 700;
     }
 
