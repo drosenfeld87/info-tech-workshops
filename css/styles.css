@@ -97,7 +97,7 @@ a:hover:before {
   
   .wrksp-section {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
   }
 
   .better-wrkshps-wrapper {
@@ -158,6 +158,10 @@ a:hover:before {
     .description {
       padding: 1px 0 10px 0;
       text-align: center
+    }
+
+    .feedback {
+      text-align: left;
     }
 
     .header {
